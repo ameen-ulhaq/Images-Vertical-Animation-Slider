@@ -422,28 +422,28 @@ body {
 
   @keyframes top-layer {
     0%{
-      transform: translateX(10px);
+      transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translateX(100vw);
+      transform: translate3d(40em, 0, 0);
     }
   }
 
   @keyframes middle-layer {
     0%{
-      transform: translateX(10px);
+      transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translateX(100vw);
+      transform: translate3d(416px, 0, 0);
     }
   }
 
   @keyframes bottom-layer {
     0%{
-      transform: translateX(10px);
+      transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translateX(100vw);
+      transform: translate3d(416px, 0, 0);
     }
   }
 
@@ -453,7 +453,8 @@ body {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    overflow: inherit;
   }
 
   .homepage-animation-wrapper {
